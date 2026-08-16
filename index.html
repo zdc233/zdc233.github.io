@@ -6,9 +6,9 @@
   <meta name="description" content="A minimal, dependency-free academic homepage template.">
   <meta name="robots" content="index,follow">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Your Name | Academic Homepage">
+  <meta property="og:title" content="Daichao Zhao(赵代超) | Academic Homepage">
   <meta property="og:description" content="Research, publications, projects, and academic experience.">
-  <title>Your Name | Academic Homepage</title>
+  <title>Daichao Zhao(赵代超) | Academic Homepage</title>
   <style>
     :root {
       --bg: #f5f5f7;
@@ -498,6 +498,26 @@
       padding: 8px 0 24px;
     }
 
+    .pub-list {
+      margin: 0;
+      padding: 0;
+      padding-left: 20px;
+    }
+
+    .pub-list li {
+      list-style: disc;
+    }
+
+    .pub-item {
+      padding: 16px 0;
+      line-height: 1.6;
+    }
+
+    .award-item {
+      padding: 4px 0;
+      line-height: 1.6;
+    }
+
     @media (max-width: 900px) {
       .project-grid,
       .more-project-grid,
@@ -585,144 +605,102 @@
 <body>
   <main class="container">
     <nav class="top-nav">
-      <div class="nav-name">Your Name</div>
+      <div class="nav-name"></div>
       <div class="nav-links">
-        <a href="#publications">Publications</a>
-        <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
-        <a href="#notes">Notes</a>
+        <a href="#awards">Awards</a>
+        <a href="#publications">Publications</a>
       </div>
     </nav>
 
     <section class="card hero">
       <div>
-        <h1>Your Name</h1>
+        <h1>Daichao Zhao(赵代超)</h1>
 
         <p class="identity">
-          Your Position or Degree Program<br>
-          Your Department, Your University
+          PhD Student<br>
+          School of Automation and Intelligent Sensing, Shanghai Jiao Tong University
+          Beijing Zhongguancun Academy(Joint Training)
         </p>
 
         <p class="about-line">
-          I am a graduate student / researcher in your field at your university. My research focuses on your research direction, your second research direction, and your broader academic interests.
+          My research focuses on generative models, multimodal large models, and intelligent agents, with applications in autonomous driving and medicine.
         </p>
 
         <div class="links">
-          <a class="pill-link" href="mailto:your.email@example.com">Email</a>
-          <a class="pill-link" href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a class="pill-link" href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-          <a class="pill-link" href="https://orcid.org/" target="_blank" rel="noopener noreferrer">ORCID</a>
-          <a class="pill-link" href="#" target="_blank" rel="noopener noreferrer">ResearchGate</a>
+          <a class="pill-link" href="mailto:dczhao26@sjtu.edu.cn">Email</a>
+          <a class="pill-link" href="https://github.com/zdc233" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="pill-link" href="https://scholar.google.com/citations?user=UQ6Gc_kAAAAJ&hl=zh-CN" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+          <a class="pill-link" href="https://orcid.org/0009-0001-5315-8552" target="_blank" rel="noopener noreferrer">ORCID</a>
+          <a class="pill-link" href="https://www.researchgate.net/profile/Daichao-Zhao" target="_blank" rel="noopener noreferrer">ResearchGate</a>
         </div>
       </div>
 
       <div class="profile-photo-wrap">
-        <img src="assets/profile-placeholder.svg" alt="Neutral profile placeholder" class="profile-photo" width="360" height="420">
+        <img src="assets/profile-placeholder.jpg" alt="Neutral profile placeholder" class="profile-photo" width="360" height="420">
       </div>
+    </section>
+
+    <section class="card" id="experience">
+      <h2>Education & Experience</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <img class="school-logo" src="assets/ahu-logo.webp" alt="Neutral institution placeholder" width="128" height="128">
+          <div>
+            <div class="timeline-time">2022–2026</div>
+            <div class="timeline-title">Anhui University, School of Internet, Bachelor of Engineering</div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <img class="school-logo" src="assets/sjtu-logo.png" alt="Neutral institution placeholder" width="128" height="128">
+          <div>
+            <div class="timeline-time">2026–Present</div>
+            <div class="timeline-title">Shanghai Jiao Tong University, School of Automation and Intelligent Sensing, PhD Student, Advisor: <a href="https://sais.sjtu.edu.cn/faculty/587.html" target="_blank" rel="noopener noreferrer">Wei Liu</a></div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <img class="school-logo" src="assets/bza-logo.png" alt="Neutral institution placeholder" width="128" height="128">
+          <div>
+            <div class="timeline-time">2026–Present</div>
+            <div class="timeline-title">Beijing Zhongguancun Academy(Joint Training)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="awards">
+      <h2>Honours & Awards</h2>
+
+      <ul class="pub-list">
+        <li class="award-item">
+            <strong>National Scholarship</strong>
+            <span style="color:#555;">✨ (×2, 2023, 2024)</span>
+        </li>
+        <li class="award-item">
+            <strong>Outstanding Graduate of Anhui Province</strong>
+            <span style="color:#555;">✨ (2026)</span>
+        </li>
+      </ul>
     </section>
 
     <section class="card" id="publications">
       <h2>Selected Publications</h2>
 
-      <div class="publication-card">
-        <div class="publication-cover-wrap">
-          <img src="assets/publication-placeholder.svg" alt="Neutral publication placeholder" class="publication-cover" width="480" height="300">
-        </div>
-        <div>
-          <div class="item-title">
-            Title of Your Selected Publication: Subtitle or Additional Description
-          </div>
-          <div class="authors"><span class="me">Your Name</span>, Coauthor A, and Coauthor B</div>
-          <div class="highlight">
-            <span class="highlight-label">Highlight:</span>
-            Briefly describe the main contribution of this paper in one sentence.
-          </div>
-          <div class="muted">Journal Name 12, 3456 (2026)</div>
-          <div class="muted">DOI: 10.xxxx/example-doi</div>
-          <div class="mini-links">
-            <a class="mini-link" href="#" target="_blank" rel="noopener noreferrer">Journal</a>
-            <a class="mini-link" href="#" target="_blank" rel="noopener noreferrer">Blog Article</a>
-          </div>
-          <span class="tag">Keyword 1</span>
-          <span class="tag">Keyword 2</span>
-          <span class="tag">Keyword 3</span>
-        </div>
-      </div>
-
-      <div class="publication-card">
-        <div class="publication-cover-wrap">
-          <img src="assets/publication-placeholder.svg" alt="Neutral publication placeholder" class="publication-cover" width="480" height="300">
-        </div>
-        <div>
-          <div class="item-title">
-            Title of Another Representative Publication
-          </div>
-          <div class="authors"><span class="me">Your Name</span>, Coauthor A, and Coauthor B</div>
-          <div class="highlight">
-            <span class="highlight-label">Highlight:</span>
-            Summarize the research question, method, or key finding in a compact way.
-          </div>
-          <div class="muted">Journal or Conference Name 8, 1234 (2025)</div>
-          <div class="muted">DOI: 10.xxxx/example-doi</div>
-          <div class="mini-links">
-            <a class="mini-link" href="#" target="_blank" rel="noopener noreferrer">Journal</a>
-            <a class="mini-link" href="#" target="_blank" rel="noopener noreferrer">Blog Article</a>
-          </div>
-          <span class="tag">Keyword 1</span>
-          <span class="tag">Keyword 2</span>
-        </div>
-      </div>
-
-      <div class="publication-card">
-        <div class="publication-cover-wrap">
-          <img src="assets/publication-placeholder.svg" alt="Neutral publication placeholder" class="publication-cover" width="480" height="300">
-        </div>
-        <div>
-          <div class="item-title">
-            Title of a Third Selected Publication
-          </div>
-          <div class="authors"><span class="me">Your Name</span> and Coauthor A</div>
-          <div class="highlight">
-            <span class="highlight-label">Highlight:</span>
-            Add a short explanation of why this work is representative.
-          </div>
-          <div class="muted">Journal or Conference Name 6, 7890 (2024)</div>
-          <div class="muted">DOI: 10.xxxx/example-doi</div>
-          <div class="mini-links">
-            <a class="mini-link" href="#" target="_blank" rel="noopener noreferrer">Journal</a>
-          </div>
-          <span class="tag">Keyword 1</span>
-          <span class="tag">Keyword 2</span>
-        </div>
-      </div>
-
-      <div class="publication-card">
-        <div class="publication-cover-wrap">
-          <img src="assets/publication-placeholder.svg" alt="Neutral publication placeholder" class="publication-cover" width="480" height="300">
-        </div>
-        <div>
-          <div class="item-title">
-            Title of a Fourth Selected Publication
-          </div>
-          <div class="authors"><span class="me">Your Name</span>, Coauthor A, and Coauthor B</div>
-          <div class="highlight">
-            <span class="highlight-label">Highlight:</span>
-            Use this line to help readers quickly understand the contribution.
-          </div>
-          <div class="muted">Journal or Conference Name 4, 5678 (2023)</div>
-          <div class="muted">DOI: 10.xxxx/example-doi</div>
-          <div class="mini-links">
-            <a class="mini-link" href="#" target="_blank" rel="noopener noreferrer">Journal</a>
-            <a class="mini-link" href="#" target="_blank" rel="noopener noreferrer">Blog Article</a>
-          </div>
-          <span class="tag">Keyword 1</span>
-          <span class="tag">Keyword 2</span>
-          <span class="tag">Keyword 3</span>
-        </div>
-      </div>
+      <ul class="pub-list">
+        <li class="pub-item">
+          <strong>CVPR </strong> (Conference) | 2026, <span style="color:#FF6B6B;font-weight:bold;">Highlight</span>, <strong>CCF-A</strong><br>
+          <span>HG-Lane: High-Fidelity Generation of Lane Scenes under Adverse Weather and Lighting Conditions without Re-annotation</span><br>
+          <span style="font-size:0.95em;"><strong>Daichao Zhao</strong>, Qiupu Chen, Feng He, Xin Ning, Qiankun Li<sup>†</sup></span>
+          <span style="margin-left: 8px;">| <a href="#" target="_blank" rel="noopener noreferrer" style="color:#0066cc;">link paper</a></span>
+        </li>
+      </ul>
     </section>
 
-    <section class="card" id="projects">
+    <!-- Projects section hidden -->
+    <!-- <section class="card" id="projects">
       <h2>Projects</h2>
 
       <div class="project-grid">
@@ -807,65 +785,12 @@
           </div>
         </details>
       </div>
-    </section>
+    </section> -->
 
-    <section class="card" id="experience">
-      <h2>Education & Experience</h2>
+    <!-- Education & Experience and Awards sections moved above and restructured -->
 
-      <div class="experience-awards-grid">
-        <div class="info-panel">
-          <h3>Education & Experience</h3>
-          <div class="timeline">
-            <div class="timeline-item">
-              <img class="school-logo" src="assets/institution-placeholder.svg" alt="Neutral institution placeholder" width="128" height="128">
-              <div>
-                <div class="timeline-time">2020–2024</div>
-                <div class="timeline-title">University Name, Department or Program, Degree</div>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <img class="school-logo" src="assets/institution-placeholder.svg" alt="Neutral institution placeholder" width="128" height="128">
-              <div>
-                <div class="timeline-time">2024–Present</div>
-                <div class="timeline-title">University Name, Department, Graduate Student / Researcher, Advisor: Advisor Name</div>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <img class="school-logo" src="assets/institution-placeholder.svg" alt="Neutral institution placeholder" width="128" height="128">
-              <div>
-                <div class="timeline-time">2025–Present</div>
-                <div class="timeline-title">Visiting Student / Research Intern, Host Institution, Host Group</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="info-panel">
-          <h3>Selected Awards</h3>
-          <div class="award-list">
-            <span class="award-chip">Selected Award One</span>
-            <span class="award-chip">Selected Award Two</span>
-            <span class="award-chip">Selected Award Three</span>
-            <span class="award-chip">Scholarship or Fellowship</span>
-            <span class="award-chip">Competition Award</span>
-          </div>
-
-          <details>
-            <summary>See more awards</summary>
-            <div class="award-list">
-              <span class="award-chip">Additional Award One</span>
-              <span class="award-chip">Additional Award Two</span>
-              <span class="award-chip">Additional Award Three</span>
-              <span class="award-chip">Teaching or Service Award</span>
-            </div>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <section class="card" id="notes">
+    <!-- Posts & Notes section hidden -->
+    <!-- <section class="card" id="notes">
       <h2>Posts & Notes</h2>
 
       <div class="note-grid">
@@ -936,11 +861,11 @@
           </details>
         </div>
       </div>
-    </section>
+    </section> -->
   </main>
 
   <footer class="footer">
-    © 2026 Your Name. Built with GitHub Pages.
+    © 2026 Daichao Zhao.
   </footer>
 </body>
 </html>
